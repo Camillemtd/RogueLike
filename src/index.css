@@ -1,0 +1,35 @@
+*, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Basic class*/
+
+.flex,
+.flex--column,
+.justify--content,
+.align--center,
+.space--between{
+  display: flex;
+}
+
+.justify--content{
+  justify-content: center;
+}
+.space--between{
+  justify-content: space-between;
+}
+.flex--column{
+  flex-direction: column;
+}
+.visible{
+  visibility: visible;
+}
+.hidden{
+  visibility: hidden;
+}
+.align--center{
+  align-items: center;
+}
