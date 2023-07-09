@@ -1,0 +1,18 @@
+.class{
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    align-items: center;
+}
+
+.class__container{
+    width: 20%;
+    
+}
+
+.class__container img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px white;
+    cursor: pointer;
+}

@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
-import '../Home/home.css'
+import "../Home/home.css";
+import { Link } from "react-router-dom";
 const Home = () => {
-
-    const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const toggleFullscreen = () => {
     if (!isFullscreen) {
@@ -42,23 +42,22 @@ const Home = () => {
 
     setIsFullscreen(false);
   };
-    return (
-        <div className='home'>
-            <img src='src/assets/BackgroundMenu.png' className='home__background'>
-            </img>
-            <div className='menu flex--column'>
-                <span>Enter in the dongeon</span>
-                <span>History</span>
-                <span>Option</span>
-                <span onClick={toggleFullscreen}>
-                {isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
-                </span>
-                
-            </div>
-            
-
-        </div>
-    );
+  return (
+    <div className="home flex">
+      <img
+        src="src/assets/BackgroundMenu.png"
+        className="home__background"
+      ></img>
+      <div className="menu flex--column">
+        <Link to={'/class'}><span>Enter in the dongeon</span></Link>
+        <span>History</span>
+        <span>Option</span>
+        <span onClick={toggleFullscreen}>
+          {isFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
+        </span>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
